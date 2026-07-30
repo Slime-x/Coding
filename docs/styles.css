@@ -23,7 +23,7 @@ header {
     color: rgb(0, 255, 255);
     padding: 0.5rem 1.5rem;
     border-radius: 5rem;
-    z-index: inherit;
+    z-index: 1000;
 
 }
 
@@ -89,4 +89,94 @@ li a:hover::before {
 #menu-icon {
     font-size: 2rem;
     display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.about img {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.info-box h3 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.info-box h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    background: #6C0703;
+    background-clip: text;
+    color: transparent;
+}
+
+.info-box span {
+    background: linear-gradient(to right, skyblue, rgb(29, 17, 194));
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border-radius: 3rem;
+    padding: 0.5rem 2rem;
+    border: 5px solid #87ceeb;
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #D3EDEF;
+    color: #405896;
+}
+
+.socials {
+    display: flex;
+    gap: 3rem;
+}
+
+.socials i {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.socials i:hover {
+    transform: scale(1.2);
 }
