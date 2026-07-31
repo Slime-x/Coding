@@ -35,10 +35,6 @@ header {
 
 }
 
-header:hover {
-    animation: rgb-cycle 1s linear infinite;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -230,6 +226,20 @@ section {
     animation: rgb-cycle2 10s linear infinite;
 }
 
+.experience-title {
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 650;
+    margin: 0 auto 3rem auto;
+    border: 5px solid black;
+    background-color: #ffffff;
+    padding: 0.25rem;
+    display: flex;
+    max-width: 400px;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
 .experience-info {
     display: flex;
     align-items: center;
@@ -244,9 +254,9 @@ section {
 }
 
 .grid-card {
-    border: 2px solid black;
-    background-color: rgb(241, 238, 238);
-    border-radius: 1rem;
+    border: 5px solid black;
+    background-color: #FFD43B;
+    border-radius: 0rem;
     padding: 2rem;
     gap: 0.5rem;
     display: flex;
@@ -258,9 +268,8 @@ section {
 }
 
 .grid-card:hover {
-    animation: rgb-cycle 7s linear infinite;
-    background-color: #f1ebd5;
-    transform: scale(1.1);
+    background-color: #f1d87a;
+    transform: translateX(-10px) translateY(-10px);
 }
 
 .grid-card i {
@@ -276,9 +285,9 @@ section {
 .grid-card span {
     font-size: 1.5rem;
     font-weight: 500;
-    background: linear-gradient(to right, skyblue, #6C0703);
+    background: solid black;
     background-clip: text;
-    color: transparent;
+    color: solid black;
 }
 
 
