@@ -9,6 +9,14 @@
 
 }
 
+body {
+    background-image: url('slime-background.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 header {
     position: fixed;
     top: 0.5rem;
@@ -25,6 +33,10 @@ header {
     border-radius: 5rem;
     z-index: 1000;
 
+}
+
+header:hover {
+    animation: rgb-cycle 1s linear infinite;
 }
 
 .logo {
@@ -271,9 +283,9 @@ section {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
     justify-content: center;
-    gap: 2rem;
+    gap: 3.5rem;
 }
 
 .project-card {
@@ -284,7 +296,7 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 0.5rem;
+    gap: 0.45rem;
     border: 2px solid black;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -299,18 +311,61 @@ section {
 }
 
 .project-card img {
-    width: 300px;
-    height: 280px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 0.5rem;
 }
 
 .project-card:hover .btn {
     border: 8px solid #87ceeb;
-    color: Black;
+    color: rgb(5, 5, 5);
 }
 
 .project-card:hover .btn:hover {
     animation: rgb-cycle 1s linear infinite;
+    background: rgb(235, 137, 137);
+    color: white;
+}
+
+
+
+/* This is for Hobbies*/
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.hobby-card {
+    padding: 1rem 2rem;
+    background-color: rgb(241, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+    border: 5px solid black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px)scale(1.05);
+    animation: rgb-cycle 1s linear infinite;
+    color: rgb(51, 255, 0);
+    background: rgb(255, 0, 0);
+}
+
+
+.hobby-card img {
+    width: 100%;
+    border: 4px solid black;
+    border-radius: 0.5rem;
 }
 
 
