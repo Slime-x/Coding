@@ -210,6 +210,10 @@ section {
     transition: 0.2s ease-in-out;
 }
 
+.socials a:visited {
+    color: inherit;
+}
+
 .socials i:hover {
     transform: scale(1.2);
 }
@@ -242,8 +246,9 @@ section {
 .grid-card {
     border: 2px solid black;
     background-color: rgb(241, 238, 238);
-    border-radius: 3rem;
+    border-radius: 1rem;
     padding: 2rem;
+    gap: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -253,9 +258,9 @@ section {
 }
 
 .grid-card:hover {
+    animation: rgb-cycle 7s linear infinite;
+    background-color: #f1ebd5;
     transform: scale(1.1);
-    background-color: #f7f7f7;
-    color: #405896;
 }
 
 .grid-card i {
@@ -264,8 +269,8 @@ section {
 }
 
 .grid-card i:hover {
-    transform: scale(1.01);
-    color: #6C0703;
+    transform: scale(1.1);
+    animation: rgb-cycle2 1s linear infinite;
 }
 
 .grid-card span {
@@ -372,15 +377,11 @@ section {
 
 /* ===This is for Footer===*/
 
-.input-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+footer {
     text-align: center;
-    gap: 2rem;
-    margin-top: 5rem;
-
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
 
