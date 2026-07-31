@@ -18,7 +18,7 @@ header {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(8px);
     color: rgb(0, 255, 255);
     padding: 0.5rem 1.5rem;
@@ -40,6 +40,7 @@ header {
 
 .logo:hover {
     transform: scale(1.2);
+    animation: rgb-cycle 0.5s linear infinite;
 }
 
 .header img {
@@ -100,12 +101,21 @@ li a:hover::before {
     display: none;
 }
 
+
+/* ===This is for Section. i.e all the sections.===*/
+
+
 section {
     min-height: 100vh;
-    padding: 8rem 12%;
+    padding: 5rem 10%;
     width: 100%;
     position: relative;
 }
+
+
+
+/* ===This is for About===*/
+
 
 .about {
     display: flex;
@@ -123,6 +133,7 @@ section {
 .about img {
     width: 30vw;
     border-radius: 50%;
+    /*animation: rgb-cycle 5s linear infinite;*/
 }
 
 .info-box {
@@ -144,6 +155,7 @@ section {
     font-size: 4rem;
     font-weight: 600;
     background: #6C0703;
+    animation: rgb-cycle2 1s linear infinite;
     background-clip: text;
     color: transparent;
 }
@@ -190,11 +202,16 @@ section {
     transform: scale(1.2);
 }
 
+
+
+/* ===This is for Experience===*/
+
 .section-title {
     text-align: center;
     font-size: 2.75rem;
     font-weight: 650;
     margin-bottom: 3rem;
+    animation: rgb-cycle2 10s linear infinite;
 }
 
 .experience-info {
@@ -203,7 +220,6 @@ section {
     justify-content: center;
     gap: 5rem;
 }
-
 
 .grid {
     display: grid;
@@ -248,6 +264,11 @@ section {
     color: transparent;
 }
 
+
+
+/* ===This is for Project===*/
+
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -272,6 +293,7 @@ section {
 
 .project-card:hover {
     transform: translateY(-10px)scale(1.05);
+    animation: rgb-cycle2 3s linear infinite;
     background-color: #f1ebd5;
     color: #405896;
 }
@@ -280,4 +302,94 @@ section {
     width: 300px;
     height: 280px;
     border-radius: 0.5rem;
+}
+
+.project-card:hover .btn {
+    border: 8px solid #87ceeb;
+    color: Black;
+}
+
+.project-card:hover .btn:hover {
+    animation: rgb-cycle 1s linear infinite;
+}
+
+
+
+/* ===This is for Footer===*/
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is for the animation. This is done using AI. ONLY THE CODE BELOW THIS. For HC team*/
+
+@keyframes rgb-cycle {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes rgb-cycle2 {
+    0% {
+        color: red;
+    }
+
+    16% {
+        color: orange;
+    }
+
+    33% {
+        color: yellow;
+    }
+
+    50% {
+        color: green;
+    }
+
+    66% {
+        color: blue;
+    }
+
+    83% {
+        color: violet;
+    }
+
+    100% {
+        color: red;
+    }
 }
