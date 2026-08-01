@@ -195,6 +195,17 @@ section {
     color: #405896;
 }
 
+.btn-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-style: dashed;
+}
+
+.btn-disabled:hover {
+    background-color: transparent;
+    color: inherit;
+}
+
 .socials {
     display: flex;
     gap: 3rem;
@@ -285,9 +296,7 @@ section {
 .grid-card span {
     font-size: 1.5rem;
     font-weight: 500;
-    background: solid black;
-    background-clip: text;
-    color: solid black;
+    color: black;
 }
 
 
@@ -418,6 +427,57 @@ footer {
 
 
 /* This is for the animation. This is done using AI. ONLY THE CODE BELOW THIS. For HC team*/
+
+
+
+/* ===This is for Section Dividers===*/
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 12%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-divider span {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, skyblue, rgb(29, 17, 194));
+    border-radius: 1rem;
+}
+
+.section-divider span:last-child {
+    background: linear-gradient(to left, transparent, skyblue, rgb(29, 17, 194));
+}
+
+.divider-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    object-fit: cover;
+    background: white;
+    padding: 0.3rem;
+    animation: divider-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes divider-pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(1.15);
+
+    }
+}
+
+
 
 @keyframes rgb-cycle {
     0% {
