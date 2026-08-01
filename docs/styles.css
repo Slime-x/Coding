@@ -154,7 +154,7 @@ section {
 }
 
 .info-box h3 {
-    font-size: 1.9rem;
+    font-size: 1.85rem;
     font-weight: 500;
     opacity: 0.8;
 }
@@ -163,7 +163,7 @@ section {
     font-size: 4rem;
     font-weight: 600;
     background: #6C0703;
-    animation: rgb-cycle2 1s linear infinite;
+    animation: rgb-cycle2 2s linear infinite;
     background-clip: text;
     color: transparent;
 }
@@ -193,6 +193,8 @@ section {
 .btn:hover {
     background-color: #D3EDEF;
     color: #405896;
+    animation: rgb-cycle2 2.5s linear infinite;
+    transform: scale(1.05);
 }
 
 .btn-disabled {
@@ -234,7 +236,7 @@ section {
     font-size: 2.75rem;
     font-weight: 650;
     margin-bottom: 3rem;
-    animation: rgb-cycle2 10s linear infinite;
+    animation: rgb-cycle2 7s linear infinite;
 }
 
 .experience-title {
@@ -308,7 +310,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
     justify-content: center;
-    gap: 3.5rem;
+    gap: 3.55rem;
 }
 
 .project-card {
@@ -345,7 +347,7 @@ section {
 }
 
 .project-card:hover .btn:hover {
-    animation: rgb-cycle 1s linear infinite;
+    animation: rgb-cycle 0.5s linear infinite;
     background: rgb(235, 137, 137);
     color: white;
 }
