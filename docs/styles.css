@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url('slime-background.svg');
+    background-image: url('background.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -28,7 +28,7 @@ header {
     gap: 5rem;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(8px);
-    color: rgb(0, 255, 255);
+    color: rgb(1, 53, 53);
     padding: 0.5rem 1.5rem;
     border-radius: 5rem;
     z-index: 1000;
@@ -77,7 +77,7 @@ li a::before {
     top: 25px;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right, rgb(29, 17, 194), skyblue);
+    background: linear-gradient(to right, rgb(29, 17, 194), rgb(1, 17, 24));
 
 }
 
@@ -95,12 +95,12 @@ li a:hover::before {
     cursor: pointer;
     text-wrap: nowrap;
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right, rgb(29, 17, 194), skyblue);
+    background: linear-gradient(to right, rgb(29, 17, 194), rgb(1, 17, 24));
 }
 
 .visit-btn:hover {
     transition: 0.3s ease-in-out;
-    background: linear-gradient(to right, skyblue, rgb(29, 17, 194));
+    background: linear-gradient(to right, rgb(1, 17, 24), rgb(29, 17, 194));
     transform: scale(1.03rem);
 }
 
@@ -157,6 +157,7 @@ section {
     font-size: 1.85rem;
     font-weight: 500;
     opacity: 0.8;
+    color: #ffffff;
 }
 
 .info-box h1 {
@@ -183,7 +184,8 @@ section {
 .btn {
     border-radius: 3rem;
     padding: 0.5rem 2rem;
-    border: 5px solid #87ceeb;
+    border: 5px solid #4ccaf059;
+    color: #ffffff;
     cursor: pointer;
     font-weight: 500;
     text-wrap: nowrap;
@@ -191,8 +193,9 @@ section {
 }
 
 .btn:hover {
-    background-color: #D3EDEF;
-    color: #405896;
+    background-color: #ffffff5e;
+    border-color: #4ccaf080;
+    color: red;
     animation: rgb-cycle2 2.5s linear infinite;
     transform: scale(1.05);
 }
@@ -211,6 +214,7 @@ section {
 .socials {
     display: flex;
     gap: 3rem;
+    color: rgb(255, 255, 255);
 }
 
 .socials i {
@@ -244,8 +248,9 @@ section {
     font-size: 2.75rem;
     font-weight: 650;
     margin: 0 auto 3rem auto;
-    border: 5px solid black;
-    background-color: #ffffff;
+    border: 5px solid rgba(0, 0, 0, 0.548);
+    color: #d0d3dd;
+    background-color: #03030334;
     padding: 0.25rem;
     display: flex;
     max-width: 400px;
@@ -267,11 +272,13 @@ section {
 }
 
 .grid-card {
-    border: 5px solid black;
-    background-color: #FFD43B;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(15, 15, 26, 0.75);
+    color: rgba(15, 15, 26, 0.75);
     border-radius: 0rem;
     padding: 2rem;
     gap: 0.5rem;
+    filter: blur(1px);
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -281,13 +288,16 @@ section {
 }
 
 .grid-card:hover {
-    background-color: #f1d87a;
+    background-color: #30303077;
+    filter: none;
+    color: #b0b3c0;
     transform: translateX(-10px) translateY(-10px);
 }
 
 .grid-card i {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .grid-card i:hover {
@@ -298,7 +308,7 @@ section {
 .grid-card span {
     font-size: 1.5rem;
     font-weight: 500;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -315,7 +325,9 @@ section {
 
 .project-card {
     padding: 1rem 2rem;
-    background-color: rgb(241, 238, 238);
+    background-color: rgba(15, 15, 26, 0.75);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,7 +343,7 @@ section {
 .project-card:hover {
     transform: translateY(-10px)scale(1.05);
     animation: rgb-cycle2 3s linear infinite;
-    background-color: #f1ebd5;
+    background-color: #48978b49;
     color: #405896;
 }
 
@@ -342,8 +354,8 @@ section {
 }
 
 .project-card:hover .btn {
-    border: 8px solid #87ceeb;
-    color: rgb(5, 5, 5);
+    border: 8px solid #9687eba9;
+    color: rgba(235, 231, 231, 0.432);
 }
 
 .project-card:hover .btn:hover {
@@ -365,14 +377,15 @@ section {
 
 .hobby-card {
     padding: 1rem 2rem;
-    background-color: rgb(241, 238, 238);
+    background-color: rgba(15, 15, 26, 0.75);
+    color: #b0b3c0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 5rem;
-    border: 5px solid black;
+    border: 5px solid rgba(255, 255, 255, 0.1);
     border-radius: 0.5rem;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -382,8 +395,8 @@ section {
 .hobby-card:hover {
     transform: translateY(-10px)scale(1.05);
     animation: rgb-cycle 1s linear infinite;
-    color: rgb(51, 255, 0);
-    background: rgb(255, 0, 0);
+    color: rgb(29, 138, 2);
+    background: rgb(117, 2, 2);
 }
 
 
